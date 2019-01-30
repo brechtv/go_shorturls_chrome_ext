@@ -1,0 +1,16 @@
+{
+  "description": "Short URL Redirects Quick Demo Extension",
+  "manifest_version": 2,
+  "name": "shorturl-demo",
+  "version": "1.0",
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
