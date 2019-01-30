@@ -7,5 +7,5 @@ For example, I can set `go/home` to redirect to `https://goo.gl/maps/UYV4osh7p19
 ## How to use
 
 - Download or clone this repository
-- Set your short URLs in the `background.js` script
 - Load it as an unpacked extension in your Chrome browser
+- Set your short URLs by clicking the Extension icon top right

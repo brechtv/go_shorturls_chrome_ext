@@ -1,19 +1,10 @@
+chrome.runtime.onMessage.addListener(function(request,sender,sendResponse) {
+    var data = request
+
+    
 // some mock data with the preferred short URL
 // and it's full URL it should be redirecting to
-var data = [
-    {
-        short_url: "go/fb",
-        url: "https://www.facebook.com"
-    },
-    {
-        short_url: "go/tw",
-        url: "https://www.twitter.com"
-    },
-    {
-        short_url: "go/cat",
-        url: "http://i.dailymail.co.uk/i/pix/2017/08/24/14/4385B31200000578-4819776-image-a-43_1503581669316.jpg"
-    }
-]
+
 
 // the function to redirect the url
 function redirectURL(requestDetails) {
@@ -37,3 +28,6 @@ chrome.webRequest.onBeforeRequest.addListener(
     // and allow blocking
     ['blocking']
 );
+})
+
+

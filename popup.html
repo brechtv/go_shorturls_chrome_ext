@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<title>Hello, world!</title>
+		<style type="text/css">
+			html {
+				min-width: 400px;
+				min-height: 400px;
+				padding: 5px;
+			}
+			.header {
+				padding-bottom: 5px;
+				margin-bottom: 5px;
+				border-bottom: solid 1px lightgrey;
+			}
+			.form-row {
+				margin-bottom: 2px;
+			}
+			.shorturl {
+				margin-bottom: 5px;
+			}
+			.shorturls {
+				margin-bottom: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+		<div class="header"><h2>Go/Slash</h2></div>
+		
+		<div class="shorturls">
+			<div class="shorturl">
+				<div class="form-row">
+					<div class="col">
+						<input type="text" class="shorturl-label form-control" placeholder="Short URL">
+					</div>
+					<div class="col">
+						<input type="text" class="shorturl-value form-control" placeholder="URL">
+					</div>
+				</div>
+				<button class="btn btn-link remove-this-shorturl">Remove this URL</button>
+			</div>
+		</div>
+
+		<button class="btn btn-primary" id="click">Save</button>
+		<button class="btn btn-outline-secondary" id="add-shorturl">Add another</button>
+
+		</div>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="popup.js"></script>
+	</body>
+</html>
