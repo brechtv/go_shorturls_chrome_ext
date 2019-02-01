@@ -72,6 +72,11 @@ function loadApp() {
                 addShortURLDiv()
             })
             $('#click').click(function() {
+                var $this = $(this)
+                $this.text("Saved!")
+                setTimeout(function() {
+                    $this.text("Save")
+                }, 1000)
                 saveSettings()
             })
             $(".preset-save").click(function() {

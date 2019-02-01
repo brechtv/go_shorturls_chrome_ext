@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 html {
-	min-width: 400px;
-	min-height: 400px;
+	min-width: 800px;
+	min-height: 800px;
 	padding: 5px;
 	font-family: 'PT Sans', sans-serif;
 }
