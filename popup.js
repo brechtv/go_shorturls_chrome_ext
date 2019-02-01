@@ -98,6 +98,7 @@ function saveSettings() {
             })
     })
     localStorage.setItem('short_urls', JSON.stringify(custom_settings))
+    settings = preset_settings.concat(custom_settings)
     applySettings(settings)
 }
 
