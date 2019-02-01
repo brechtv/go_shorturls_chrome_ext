@@ -1,7 +1,7 @@
 {
-  "description": "Short URL Redirects Quick Demo Extension",
+  "description": "#ShortURLs for everyone",
   "manifest_version": 2,
-  "name": "shorturl-demo",
+  "name": "#goslash",
   "version": "1.0",
    "browser_action": {
     "default_popup": "popup.html"
