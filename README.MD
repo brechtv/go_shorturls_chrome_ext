@@ -9,4 +9,4 @@ For example, I can set `go/home` to redirect to `https://goo.gl/maps/UYV4osh7p19
 - Download or clone this repository
 - Load it as an unpacked extension in your Chrome browser
 - Set your short URLs by clicking the Extension icon top right
-- To load preset shorturls, click 'presets' and add the path to a valid JSON file.
+- To load preset shorturls, click 'presets' and add the path to a valid JSON file (e.g. `"https://raw.githack.com/brechtv/goslash/master/sample.json"`)
