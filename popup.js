@@ -7,6 +7,9 @@ loadApp()
 
 function loadApp() {
     presets_file_location = localStorage.getItem('short_urls_preset_file')
+    resetUI()
+
+
     $.getJSON(presets_file_location, {
             format: "json"
         })
@@ -26,6 +29,7 @@ function loadApp() {
             }
         })
         .fail(function() {
+            $(".preset-location").val("no/invalid location")
             if (localStorage.getItem('short_urls') == undefined ||
                 localStorage.getItem('short_urls') == "[]") {
                 custom_settings = [{
@@ -71,7 +75,6 @@ function loadApp() {
                 saveSettings()
             })
             $(".preset-save").click(function() {
-                console.log('hallo')
                 updatePresetFile($(".preset-location").val())
             })
         })
@@ -130,6 +133,10 @@ function resetUI() {
     custom_settings = []
     $(".clear-on-refresh ").remove()
     $('html *').off()
+    if(presets_file_location) {
+        console.log("hallo")
+        $(".preset-location").val(presets_file_location)
+    }
 }
 
 // TEMPLATES
