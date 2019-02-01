@@ -1,10 +1,8 @@
 var data = JSON.parse(localStorage.getItem('last_known_shorturls'))
-console.log(data)
 
 chrome.runtime.onMessage.addListener(function(request,sender,sendResponse) {
     localStorage.setItem('last_known_shorturls', JSON.stringify(request))
     data = request
-    console.log(data)
 })
 
 // the function to redirect the url
