@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+html {
+	min-width: 400px;
+	min-height: 400px;
+	padding: 5px;
+	font-family: 'PT Sans', sans-serif;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+.btn-primary {
+	background-color: #388E3C;
+	border-color: #388E3C;
+}
+.btn-primary:hover {
+	background-color: #317c34;
+	border-color: #317c34;
+}
+.btn-link {
+	color: #388E3C;
+}
+.btn-link:hover {
+	color: #317c34;
+}
+
+.btn-outline-secondary {
+	background-color: #fff;
+	border-color: #989898;
+}
+.btn-outline-secondary:hover {
+	background-color: #46b34b;
+	border-color: #989898;
+}
+
+.header {
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-bottom: solid 1px lightgrey;
+	text-align: center;
+	background-color: #3fa044;
+	color: white;
+}
+
+.header h2 {
+	margin: 0;
+}
+
+.subheader {
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	border-bottom: solid 1px lightgrey;
+	text-align: center;
+	background-color: #fff;
+	color: #3fa044;
+}
+
+.form-control {
+	border-color: #989898;
+}
+
+.form-row {
+	margin-bottom: 2px;
+}
+
+.shorturl {
+	margin-bottom: 5px;
+}
+
+.shorturls {
+	margin-bottom: 5px;
+}
+
+.preset-location {
+	margin-bottom: 5px;
+}
+
+#presetsDiv {
+	margin-top: 5px;
+}
+

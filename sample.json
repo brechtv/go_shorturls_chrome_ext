@@ -1,0 +1,26 @@
+[
+   {
+      "short_url":"go/search",
+      "url":"https://www.google.com"
+   },
+   {
+      "short_url":"go/mail",
+      "url":"https://mail.google.com"
+   },
+   {
+      "short_url":"go/fb",
+      "url":"https://www.facebook.com"
+   },
+   {
+      "short_url":"go/tw",
+      "url":"https://www.twitter.com"
+   },
+   {
+      "short_url":"go/news",
+      "url":"https://www.theguardian.com/international"
+   },
+   {
+      "short_url":"go/football",
+      "url":"http://bohemianfc.com/"
+   }
+]
