@@ -77,7 +77,11 @@ function loadApp() {
             $(".preset-save").click(function() {
                 updatePresetFile($(".preset-location").val())
             })
+
+            console.log(settings)
+            applySettings(settings)
         })
+
 }
 
 
@@ -92,7 +96,6 @@ function saveSettings() {
                 "short_url": label,
                 "url": value
             })
-        console.log(custom_settings)
     })
     localStorage.setItem('short_urls', JSON.stringify(custom_settings))
     applySettings(settings)
@@ -100,8 +103,8 @@ function saveSettings() {
 
 // send settings to background page
 // always done after saving
-function applySettings(settings) {
-    chrome.runtime.sendMessage(settings,
+function applySettings(a) {
+    chrome.runtime.sendMessage(a,
         function(response) {
             console.log(response)
         });

@@ -1,10 +1,11 @@
+var data = JSON.parse(localStorage.getItem('last_known_shorturls'))
+console.log(data)
+
 chrome.runtime.onMessage.addListener(function(request,sender,sendResponse) {
-    var data = request
-
-    
-// some mock data with the preferred short URL
-// and it's full URL it should be redirecting to
-
+    localStorage.setItem('last_known_shorturls', JSON.stringify(request))
+    data = request
+    console.log(data)
+})
 
 // the function to redirect the url
 function redirectURL(requestDetails) {
@@ -28,6 +29,4 @@ chrome.webRequest.onBeforeRequest.addListener(
     // and allow blocking
     ['blocking']
 );
-})
-
 
